@@ -44,7 +44,7 @@ const Navbar = () => {
           <FaTimes />
         </div>
         <ul className="flex flex-col gap-7">
-          <Link to="/home" onClick={handleNavClose}>
+          <Link to="/" onClick={handleNavClose}>
             <li className="cursor-pointer tracking-widest">MAIN</li>
           </Link>
           <Link to="/gallery" onClick={handleNavClose}>
