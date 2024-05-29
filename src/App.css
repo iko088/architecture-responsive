@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Custom styles for the animation */
+.parentlink {
+  @apply relative;
+}
+
+.mainlink::after,
+.mainlink::before {
+  content: "";
+  @apply absolute left-1/2 transform -translate-x-1/2 bg-black h-[2px];
+  width: 0;
+  transition: width 0.3s ease;
+  transform-origin: center;
+}
+
+.mainlink::after {
+  bottom: -6px;
+}
+
+.mainlink::before {
+  top: -6px;
+}
+
+.mainlink:hover::after,
+.mainlink:hover::before {
+  width: var(--line-width);
+}
+
+
+.contentline::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: -550px;
+  width: 550px;
+  height: 2px;
+  background: #F2F2F2;
+}
+
+@media (max-width: 639px) {
+  .contentline::before {
+    display: none;
+  }
+}
