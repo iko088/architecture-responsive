@@ -4,9 +4,9 @@ import { CiLocationOn } from "react-icons/ci";
 import { MdOutlineLocalPhone } from "react-icons/md";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { FaFacebookF } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { FaPinterest } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import { GiArchitectMask } from "react-icons/gi";
 
 
@@ -24,7 +24,7 @@ const Footer = () => {
           <h1 className="pb-2 sm:text-xl">Information</h1>
           <ul className="text-xs sm:text-sm flex flex-col items-center gap-2">
             <li>
-              <Link to="/main">Main</Link>
+              <Link to="/">Main</Link>
             </li>
             <li>
               <Link to="/gallery">Gallery</Link>
@@ -68,10 +68,18 @@ const Footer = () => {
         <div>
         <h1 className="sm:text-xl">Social Media</h1>
        <div className="flex items-center justify-center gap-3 mt-2">
-       <FaFacebookF className="cursor-pointer" />
-        <FaTwitter className="cursor-pointer" />
+       <Link to='https://www.facebook.com/profile.php?id=100068916321594'>
+        <FaFacebookF className="cursor-pointer" />
+      </Link>
+      <Link to='https://www.youtube.com/@wizard-of-code'>
+        <FaYoutube className="cursor-pointer" />
+      </Link>
+      <Link to='https://www.linkedin.com/in/ikram-khan-54306b269/'>
         <FaLinkedin className="cursor-pointer"/>
-        <FaPinterest className="cursor-pointer"/>
+      </Link>
+      <Link to='https://www.instagram.com/ikram_khan1s/'>
+        <FaInstagram className="cursor-pointer"/>
+      </Link>
        </div>
         </div>
       </div>

@@ -5,10 +5,7 @@ const Contact = () => {
     <div className='my-10 flex flex-col md:flex-row gap-6 items-center text-center'>
       <div className="">
         <h1 className="leading-none text-3xl md:text-5xl text-[#BDBDBD] font-light ">
-          Company
-        </h1>
-        <h1 className="leading-none text-3xl md:text-5xl text-[#333333] font-bold ">
-          Certifications
+          Contact
         </h1>
         <div className='mt-8'>
         <h1 className='font-bold'>Company name</h1>
